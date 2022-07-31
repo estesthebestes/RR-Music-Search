@@ -1,6 +1,6 @@
-import { createContext } from 'react';
+import { createContext, useRef } from 'react';
 
 export const SearchContext = createContext({
-	term: '',
+	term: useRef(''),
 	handleSearch: () => {},
 });
